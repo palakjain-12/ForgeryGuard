@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForgeryGuard - Your Digital Shield</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Login Page -->
+  <div class="login-container" id="loginPage">
+    <div class="login-box">
+      <h1>Login</h1>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign up</a></p>
+    </div>
+  </div>
+
+  <!-- Sign-Up Page -->
+  <div class="signup-container" id="signUpPage" style="display: none;">
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <form id="signUpForm" onsubmit="handleSignUp(event)">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+  </div>
+
+  <!-- Dashboard (same as before) -->
+  <div class="dashboard-container" style="display: none;" id="dashboardPage">
+    <div class="navbar">
+      <h1>ForgeryGuard Dashboard</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Upload</a>
+        <a href="#">History</a>
+        <a href="#">Profile</a>
+      </nav>
+    </div>
+    <div class="dashboard-content">
+      <h2>Welcome to ForgeryGuard</h2>
+      <p>Upload your document or image for verification below:</p>
+      <div class="upload-section">
+        <form>
+          <input type="file" id="file-upload" accept=".jpg, .jpeg, .png, .pdf, .docx" required>
+          <button type="submit">Upload</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to show the sign-up page
+    function showSignUp() {
+      document.getElementById('loginPage').style.display = 'none';
+      document.getElementById('signUpPage').style.display = 'flex';
+    }
+
+    // Function to show the login page
+    function showLogin() {
+      document.getElementById('signUpPage').style.display = 'none';
+      document.getElementById('loginPage').style.display = 'flex';
+    }
+
+    // Simulate login handling
+    function handleLogin(event) {
+      event.preventDefault(); // Prevents form from submitting
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (username === 'admin' && password === 'admin123') {
+        alert('Login successful! Redirecting to dashboard...');
+        document.getElementById('loginPage').style.display = 'none';
+        document.getElementById('dashboardPage').style.display = 'block';
+      } else {
+        alert('Incorrect username or password.');
+      }
+    }
+
+    // Simulate sign-up handling
+    function handleSignUp(event) {
+      event.preventDefault(); // Prevents form from submitting
+      alert('Sign up successful! Please login.');
+      showLogin(); // Redirect to login page after successful sign up
+    }
+  </script>
+
+</body>
+</html>

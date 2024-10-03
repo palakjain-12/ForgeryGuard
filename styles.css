@@ -1,0 +1,182 @@
+/* Resetting Default Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Login Page Styles */
+  .login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .login-box h1 {
+    margin-bottom: 20px;
+  }
+  
+  .login-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-box button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #2f80ed;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-box button:hover {
+    background-color: #56ccf2;
+  }
+  
+  .login-box p {
+    margin-top: 10px;
+  }
+  
+  .login-box a {
+    color: #2f80ed;
+  }
+  
+  /* Dashboard Styles */
+  .dashboard-container {
+    background-color: #f0f4f8;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f80ed;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .navbar h1 {
+    font-size: 24px;
+  }
+  
+  .navbar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .navbar nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .dashboard-content {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .dashboard-content h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .dashboard-content p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+  }
+  
+  .upload-section {
+    margin-top: 30px;
+  }
+  
+  .upload-section input[type="file"] {
+    padding: 10px;
+    border: 2px dashed #2f80ed;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .upload-section button {
+    padding: 10px 20px;
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-section button:hover {
+    background-color: #56ccf2;
+  }
+  /* Sign-Up Page Styles (similar to login) */
+.signup-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+  }
+  
+  .signup-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .signup-box h1 {
+    margin-bottom: 20px;
+  }
+  
+  .signup-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signup-box button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #2f80ed;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signup-box button:hover {
+    background-color: #56ccf2;
+  }
+  
+  .signup-box p {
+    margin-top: 10px;
+  }
+  
+  .signup-box a {
+    color: #2f80ed;
+  }
+  
